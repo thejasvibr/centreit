@@ -1,0 +1,21 @@
+#: kivy 1.11.1
+
+<TileGame>:
+    canvas:
+        Color:
+            rgb : 0.1,0.1,0.2,0.1 
+        Ellipse:
+            pos: self.centre_gravity
+            size : self.cg_dot_size, self.cg_dot_size
+        Ellipse:
+            pos : root.width / 2, root.height / 2
+            size : self.safe_zone_size, self.safe_zone_size
+            
+    
+    Label:
+        font_size: 70  
+        center_x: root.width / 4
+        top: root.top *0.8
+        text: str("status")
+    
+
