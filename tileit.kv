@@ -3,12 +3,12 @@
 <TileGame>:
     canvas:
         Color:
-            rgb : 0.1,0.1,0.2,0.1 
+            rgb : 1,1,1,0.1 
         Ellipse:
             pos: self.centre_gravity
             size : self.cg_dot_size, self.cg_dot_size
         Ellipse:
-            pos : root.width / 2, root.height / 2
+            pos : root.center_x, root.center_y
             size : self.safe_zone_size, self.safe_zone_size
             
     
@@ -16,6 +16,6 @@
         font_size: 70  
         center_x: root.width / 4
         top: root.top *0.8
-        text: str("status")
+        text: root.status
     
 
