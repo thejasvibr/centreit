@@ -6,7 +6,6 @@ from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.properties import StringProperty, ReferenceListProperty, NumericProperty
 from kivy.graphics import Ellipse, Color
-import datetime as dt
 import random
 from math import sqrt
 import copy
