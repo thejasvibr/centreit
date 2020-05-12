@@ -14,7 +14,7 @@
         Color: 
             rgb: 1,0,0,0.1
         Ellipse:
-            pos:root.parent.center
+            pos: self.parent.center_x-3.5, self.parent.center_y-3.5
             size: (5,5)
 
 <TileGame>:
@@ -26,6 +26,8 @@
             id: CG ball
             pos: self.centre_gravity
             size : self.cg_dot_size, self.cg_dot_size
+    Button:
+        text: "Reset"
  
 
     Label:
@@ -46,16 +48,16 @@
     
     Label:
         id: lives left
-        font_size: 40
+        font_size: 30
         text: "Lives left"
         center_x : root.width * 0.8
-        top : root.top*0.1
+        top : root.top*0.95
     Label:
         id: lives left
-        font_size: 40
+        font_size: 25
         text: str(root.lives_left)
         center_x : root.width * 0.8
-        top : root.top*0.2
+        top : root.top*0.9
         
     
     TargetCircle:
